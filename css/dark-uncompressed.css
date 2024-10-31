@@ -1,0 +1,270 @@
+* {margin: 0; padding: 0}
+ 
+body {
+	background: #222; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	color: #ddd;
+	overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#soonWrapper {
+    background: rgba(153,153,153,0.8);
+    -pie-background: rgb(153,153,153);
+    border: 10px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px rgba(238,238,238,0.8);
+    height: 300px;
+    left: 50%;
+    margin: -190px 0 0 -340px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    width: 600px;
+    behavior: url(/media/plg_n3tcomingsoon/css/pie.php);
+}
+
+#soonWrapper.maillistEnabled {
+    top: 40%;
+}
+
+h1 {
+	margin: 80px 0 10px 0;
+	font-size: 3em;
+	text-shadow: 5px 5px 5px #000;
+	filter: "chroma(color=#999999), shadow(color=#000000,direction=135,strength=5)";
+}
+
+#soonLogo {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+#soonText {
+	text-align: right;
+	font-size: 2em;
+	color: #333;
+	text-shadow: 5px 5px 5px #ddd;
+	filter: "chroma(color=#999999), shadow(color=#dddddd,direction=135,strength=5)";
+	margin: 0 30px 0 0;
+}
+
+#soonText a {
+	color: #333;
+}
+
+#soonCountDown {
+	height: 60px;
+	text-align: center;
+	margin: 30px 0 15px 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.4em;
+	color: #333;
+}
+
+#soonDaysWrapper, 
+#soonHoursWrapper, 
+#soonMinutesWrapper, 
+#soonSecondsWrapper {
+  position: relative;
+	display: inline-block;
+	height: 40px;
+	padding: 10px;
+	background: #000;
+	color: #eee;
+  border-radius: 10px;
+  behavior: url(/media/plg_n3tcomingsoon/css/pie.php);
+} 
+
+#soonDays, 
+#soonHours, 
+#soonMinutes, 
+#soonSeconds {
+	display: block;
+	height: 30px;
+	font-size: 2em;
+} 
+
+#soonDaysLabel, 
+#soonHoursLabel, 
+#soonMinutesLabel, 
+#soonSecondsLabel {
+	display: block;
+	height: 20px;
+	font-size: 0.8em;
+	color: #fff;
+} 
+
+/*Mailist*/
+.maillistWrapper {
+    background: rgba(153,153,153,0.8);
+    -pie-background: rgb(153,153,153);
+    border: 10px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px rgba(238,238,238,0.8);
+    left: 50%;
+    margin: 220px 0 0 -290px;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    width: 540px;
+    behavior: url(/media/plg_n3tcomingsoon/css/pie.php);
+    text-align: center;
+}
+
+.maillistText {
+  margin: 0 0 10px 0;
+}
+
+.maillistField, .maillistButton {
+  display: inline;
+}
+
+.inputbox {
+  width: 150px;
+  padding: 5px;
+  font-size: 1.1em;
+  color: #bbb;
+  border: 1px solid #ddd;
+  height: 20px;
+}
+
+.maillistNoName .inputbox {
+  width: 300px;
+}
+
+.inputbox:hover, .inputbox:focus {
+  border: 1px solid #333;
+  color: #333;
+}
+
+.button {
+  width: 150px;
+  padding: 5px;
+  font-size: 1.1em;
+  color: #333;
+  background: #ddd;
+  height: 32px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 16px;
+  behavior: url(/media/plg_n3tcomingsoon/css/pie.php);
+}
+
+.button:hover {
+  color: #eee;
+  background: #000;
+  border: 1px solid #000;
+}
+
+#system-message, #system-message ul {
+  list-style: none;
+}
+
+dt {
+  display: none;
+}
+
+#social {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  overflow: hidden;
+}
+
+#social a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  border-radius: 5px 0 0 5px;
+  behavior: url(/media/plg_n3tcomingsoon/css/pie.php);
+}
+
+#social a span {
+  display: none;
+}
+
+#social {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  overflow: hidden;
+  list-style: none;
+  width: 40px;
+}
+
+#social li {
+  padding: 5px;
+  margin: 0 0 10px 10px;
+  background: rgba(153,153,153,0.8);
+  -pie-background: rgb(153,153,153);
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  behavior: url(/media/plg_n3tcomingsoon/css/pie.php);
+}
+
+#social a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+}
+
+#social a span {
+  display: none;
+}
+
+#social li:hover {
+  margin: 0 0 10px 0;
+  transition: margin 0.5s; -moz-transition: margin 0.5s; -webkit-transition: margin 0.5s; -o-transition: margin 0.5s;
+}
+
+#social a#facebook {
+  background-position: 0 0;
+}
+
+#social li:hover a#facebook {
+  background-position: 0 -28px;
+}
+
+#social a#twitter {
+  background-position: -28px 0;
+}
+
+#social li:hover a#twitter {
+  background-position: -28px -28px;
+}
+
+#social a#googleplus {
+  background-position: -56px 0;
+}
+
+#social li:hover a#googleplus {
+  background-position: -56px -28px;
+}
+
+#social a#youtube {
+  background-position: -84px 0;
+}
+
+#social li:hover a#youtube {
+  background-position: -84px -28px;
+}
